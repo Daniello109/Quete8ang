@@ -1,0 +1,4 @@
+<!-- tras configurar el componente hijo, toca configurar el template hijo -->
+<p>Enter your onomatopia :</p>
+<input type="text" placeholder="write onomatopia" #newOnomatopiaValue> <!-- un input normal de lcual se recuperará el valor. Es parecido a ngModel, pero para acceder el valor (propiedad value), se almacena el la variable #newOnomatopiaValue -->
+<button type="button" (click)="sendOnomatopiaToParent(newOnomatopiaValue.value)">add</button> <!-- esta es la función que hemos creado en el componente hijo y que mandará el valor al comonente padre -->
